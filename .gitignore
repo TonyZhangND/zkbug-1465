@@ -1,0 +1,4 @@
+zkdata/myid
+zkdata/version-2/
+zkdata/*.pid
+**/zookeeper.out
