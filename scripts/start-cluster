@@ -1,0 +1,60 @@
+#!/bin/bash
+# Starts a ZooKeeper cluster with specified hosts
+# ./start-cluster <results_dir> <num_rounds> <delay> <host_id..>
+
+
+HOSTS="/home/nudzhang/zkbug-1465/scripts/hosts.csv"
+ZK_DIR="/home/nudzhang/zkbug-1465/zookeeper-3.4.3"
+
+# First, grab parameters
+HOST_ID_LIST=("$@")
+
+HOST_NAME_LIST=()
+HOST_IP_LIST=()
+
+for i in "${HOST_ID_LIST[@]}"
+do
+    while IFS=, read -r id name address port
+    do 
+        if [ $id -eq $i ]
+        then
+            # echo "TONY: $name $address $port"
+            HOST_NAME_LIST+=("$name")
+            HOST_IP_LIST+=("$address")
+            HOST_PORT_LIST+=("$port")
+            break
+        fi
+    done < <(tail -n +2 $HOSTS)
+done
+
+date
+echo "Starting ZooKeeper cluster:"
+echo "  - Cluster-size: ${#HOST_NAME_LIST[@]}"
+echo "  - Participants: ${HOST_NAME_LIST[@]}"
+
+
+
+# Run the experiments on each note via ssh
+
+for ((i=$[ ${#HOST_NAME_LIST[@]} - 1];i>=0;i--))
+do
+    NODE_NAME=${HOST_NAME_LIST[$i]}
+    NODE_ID=${HOST_ID_LIST[$i]}
+    NODE_ADDR=${HOST_IP_LIST[$i]}
+    echo "Starting node $NODE_ID, $NODE_NAME"
+
+    # Kill any processes using the required port
+    # ssh nudzhang@$NODE_ADDR "lsof -t -i:$NODE_PORT | xargs -I{} kill -9 {} > /dev/null" 
+
+    # Start noode
+    if [ $i -lt 20 ] 
+    then 
+        ssh nudzhang@$NODE_ADDR "$ZK_DIR/bin/zkServer.sh start"  &
+    else
+        # Wait on the last node
+        ssh nudzhang@$NODE_ADDR "$ZK_DIR/bin/zkServer.sh start"
+    fi
+done
+
+sleep 1
+echo "Cluster started"
