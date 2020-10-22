@@ -8,7 +8,7 @@
    (the "License"); you may not use this file except in compliance with
    the License.  You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -83,7 +83,7 @@
     <property name="docs.dir" value="${basedir}/docs"/>
     <property name="docs.src" value="${basedir}/src/docs"/>
     <property name="javadoc.link.java"
-              value="http://java.sun.com/javase/6/docs/api/" />
+              value="https://java.sun.com/javase/6/docs/api/" />
     <property name="javadoc.packages" value="org.apache.*" />
 
     <property name="dist.dir" value="${build.dir}/${final.name}"/>
@@ -100,7 +100,7 @@
 
     <property name="ivy.version" value="2.2.0"/>
     <property name="ivy.url"
-              value="http://repo2.maven.org/maven2/org/apache/ivy/ivy" />
+              value="https://repo1.maven.org/maven2/org/apache/ivy/ivy" />
     <property name="ivy.home" value="${user.home}/.ant" />
     <property name="ivy.lib" value="${build.dir}/lib"/>
     <property name="ivy.package.lib" value="${build.dir}/package/lib"/>
@@ -127,7 +127,7 @@
     <property name="coveragereport.dir" value="${build.dir}/cobertura" />
 
     <!-- rats properties -->
-    <property name="rats_url" value="http://arat.googlecode.com/files/rat-lib-all-0.5.1.jar" />
+    <property name="rats_url" value="https://arat.googlecode.com/files/rat-lib-all-0.5.1.jar" />
     <property name="rat.reporting.classname" value="rat.Report"/>
 
         <!-- test patch properties -->
@@ -144,7 +144,7 @@
     <property name="jdiff.xml.dir" value="${lib.dir}/jdiff"/>
     <property name="jdiff.stable" value="3.1.1"/>
     <property name="jdiff.stable.javadoc" 
-            value="http://hadoop.apache.org/zookeeper/docs/r${jdiff.stable}/api/"/>
+            value="https://hadoop.apache.org/zookeeper/docs/r${jdiff.stable}/api/"/>
 
     <!-- eclipse property set -->
     <property name="build.dir.eclipse" value=".eclipse"/>
@@ -517,14 +517,14 @@
             	
             	<!-- The following are OSGi manifest headers -->
             	<!-- currently hardcoded, when things get more complicated we could use BND 
-            	http://www.aqute.biz/Code/Bnd to generate them -->
+            	https://www.aqute.biz/Code/Bnd to generate them -->
                 <attribute name="Bundle-Vendor" value="The Apache Software Foundation"/>
                 <attribute name="Bundle-Name" value="ZooKeeper Bundle"/>
                 <attribute name="Bundle-SymbolicName" value="org.apache.hadoop.zookeeper"/>
                 <attribute name="Bundle-ManifestVersion" value="2"/>
                 <attribute name="Bundle-Version" value="${version}"/>
-                <attribute name="Bundle-License" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-                <attribute name="Bundle-DocURL" value="http://hadoop.apache.org/zookeeper"/>
+                <attribute name="Bundle-License" value="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+                <attribute name="Bundle-DocURL" value="https://hadoop.apache.org/zookeeper"/>
                 <attribute name="Import-Package" value='javax.management,org.apache.log4j,org.osgi.framework;version="[1.4,2.0)",org.osgi.util.tracker;version="[1.1,2.0)"'/>
                 <attribute name="Export-Package" value='org.apache.zookeeper;version="${version}",org.apache.zookeeper.data;version="${version}",org.apache.zookeeper.version;version="${version}",org.apache.zookeeper.server;version="${version}",org.apache.zookeeper.server.quorum;version="${version}"'/>
             </manifest>
@@ -558,14 +558,14 @@
             	
             	<!-- The following are OSGi manifest headers -->
             	<!-- currently hardcoded, when things get more complicated we could use BND 
-            	http://www.aqute.biz/Code/Bnd to generate them -->
+            	https://www.aqute.biz/Code/Bnd to generate them -->
                 <attribute name="Bundle-Vendor" value="The Apache Software Foundation"/>
                 <attribute name="Bundle-Name" value="ZooKeeper Bundle"/>
                 <attribute name="Bundle-SymbolicName" value="org.apache.hadoop.zookeeper"/>
                 <attribute name="Bundle-ManifestVersion" value="2"/>
                 <attribute name="Bundle-Version" value="${version}"/>
-                <attribute name="Bundle-License" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-                <attribute name="Bundle-DocURL" value="http://hadoop.apache.org/zookeeper"/>
+                <attribute name="Bundle-License" value="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+                <attribute name="Bundle-DocURL" value="https://hadoop.apache.org/zookeeper"/>
                 <attribute name="Import-Package" value='javax.management,org.apache.log4j,org.osgi.framework;version="[1.4,2.0)",org.osgi.util.tracker;version="[1.1,2.0)"'/>
                 <attribute name="Export-Package" value='org.apache.zookeeper;version="${version}",org.apache.zookeeper.data;version="${version}",org.apache.zookeeper.version;version="${version}",org.apache.zookeeper.server;version="${version}",org.apache.zookeeper.server.quorum;version="${version}"'/>
             </manifest>
@@ -1638,7 +1638,7 @@
      </condition>
 
      <target name="ant-eclipse-download" unless="ant-eclipse.jar.exists">
-       <get src="http://downloads.sourceforge.net/project/ant-eclipse/ant-eclipse/1.0/ant-eclipse-1.0.bin.tar.bz2"
+       <get src="https://downloads.sourceforge.net/project/ant-eclipse/ant-eclipse/1.0/ant-eclipse-1.0.bin.tar.bz2"
             dest="${src.dir}/java/ant-eclipse-1.0.bin.tar.bz2" usetimestamp="false" />
 
        <bunzip2 src="${src.dir}/java/ant-eclipse-1.0.bin.tar.bz2"/>
