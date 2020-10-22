@@ -1,3 +1,4 @@
+.vscode/
 zkdata/myid
 zkdata/version-2/
 zkdata/*.pid
