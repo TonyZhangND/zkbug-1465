@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class CheckVersionTxn implements Record {
+public class CheckVersionTxn implements org.apache.jute.Record {
   private String path;
   private int version;
   public CheckVersionTxn() {

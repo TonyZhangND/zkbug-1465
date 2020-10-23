@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class MultiHeader implements Record {
+public class MultiHeader implements org.apache.jute.Record {
   private int type;
   private boolean done;
   private int err;

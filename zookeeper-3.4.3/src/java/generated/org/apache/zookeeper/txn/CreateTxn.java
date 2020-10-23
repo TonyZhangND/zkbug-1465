@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class CreateTxn implements Record {
+public class CreateTxn implements org.apache.jute.Record {
   private String path;
   private byte[] data;
   private java.util.List<org.apache.zookeeper.data.ACL> acl;

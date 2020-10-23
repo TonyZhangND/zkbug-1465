@@ -34,7 +34,7 @@ import java.util.List;
  * the type of the following transaction or a negative number if no more transactions
  * are included.
  */
-public class MultiTransactionRecord implements Record, Iterable<Op> {
+public class MultiTransactionRecord implements org.apache.jute.Record, Iterable<Op> {
     private List<Op> ops = new ArrayList<Op>();
 
     public MultiTransactionRecord() {

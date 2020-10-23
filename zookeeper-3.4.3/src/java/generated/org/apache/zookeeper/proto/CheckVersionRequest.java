@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class CheckVersionRequest implements Record {
+public class CheckVersionRequest implements org.apache.jute.Record {
   private String path;
   private int version;
   public CheckVersionRequest() {

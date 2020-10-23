@@ -20,7 +20,7 @@
 package org.apache.zookeeper.data;
 
 import org.apache.jute.*;
-public class StatPersisted implements Record {
+public class StatPersisted implements org.apache.jute.Record {
   private long czxid;
   private long mzxid;
   private long ctime;

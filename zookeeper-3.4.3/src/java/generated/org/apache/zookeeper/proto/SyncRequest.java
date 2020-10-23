@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class SyncRequest implements Record {
+public class SyncRequest implements org.apache.jute.Record {
   private String path;
   public SyncRequest() {
   }

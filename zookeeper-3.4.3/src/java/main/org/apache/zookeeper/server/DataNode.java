@@ -35,7 +35,7 @@ import org.apache.zookeeper.data.StatPersisted;
  * array of ACLs, a stat object, and a set of its children's paths.
  * 
  */
-public class DataNode implements Record {
+public class DataNode implements org.apache.jute.Record {
     /** the parent of this datanode */
     DataNode parent;
 

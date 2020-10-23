@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class SetSASLResponse implements Record {
+public class SetSASLResponse implements org.apache.jute.Record {
   private byte[] token;
   public SetSASLResponse() {
   }

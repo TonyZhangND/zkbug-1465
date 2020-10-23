@@ -20,7 +20,7 @@
 package org.apache.zookeeper.data;
 
 import org.apache.jute.*;
-public class Id implements Record {
+public class Id implements org.apache.jute.Record {
   private String scheme;
   private String id;
   public Id() {

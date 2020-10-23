@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class GetMaxChildrenRequest implements Record {
+public class GetMaxChildrenRequest implements org.apache.jute.Record {
   private String path;
   public GetMaxChildrenRequest() {
   }

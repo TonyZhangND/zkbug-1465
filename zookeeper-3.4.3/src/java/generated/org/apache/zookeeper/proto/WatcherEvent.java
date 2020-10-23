@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class WatcherEvent implements Record {
+public class WatcherEvent implements org.apache.jute.Record {
   private int type;
   private int state;
   private String path;

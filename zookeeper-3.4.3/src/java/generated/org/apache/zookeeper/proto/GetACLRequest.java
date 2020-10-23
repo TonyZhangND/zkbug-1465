@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class GetACLRequest implements Record {
+public class GetACLRequest implements org.apache.jute.Record {
   private String path;
   public GetACLRequest() {
   }

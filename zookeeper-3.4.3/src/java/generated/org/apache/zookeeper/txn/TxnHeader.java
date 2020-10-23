@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class TxnHeader implements Record {
+public class TxnHeader implements org.apache.jute.Record {
   private long clientId;
   private int cxid;
   private long zxid;

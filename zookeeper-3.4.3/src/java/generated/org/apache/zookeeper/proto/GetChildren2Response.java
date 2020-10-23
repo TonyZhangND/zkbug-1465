@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class GetChildren2Response implements Record {
+public class GetChildren2Response implements org.apache.jute.Record {
   private java.util.List<String> children;
   private org.apache.zookeeper.data.Stat stat;
   public GetChildren2Response() {

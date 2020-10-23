@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class AuthPacket implements Record {
+public class AuthPacket implements org.apache.jute.Record {
   private int type;
   private String scheme;
   private byte[] auth;

@@ -20,7 +20,7 @@
 package org.apache.zookeeper.server.quorum;
 
 import org.apache.jute.*;
-public class QuorumPacket implements Record {
+public class QuorumPacket implements org.apache.jute.Record {
   private int type;
   private long zxid;
   private byte[] data;

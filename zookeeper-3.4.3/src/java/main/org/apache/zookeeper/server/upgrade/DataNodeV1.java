@@ -38,7 +38,7 @@ import org.apache.zookeeper.data.StatPersistedV1;
  * array of ACLs, a stat object, and a set of its children's paths.
  * 
  */
-public class DataNodeV1 implements Record {
+public class DataNodeV1 implements org.apache.jute.Record {
     DataNodeV1() {
         // default rather than public constructor
     }

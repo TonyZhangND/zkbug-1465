@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class DeleteRequest implements Record {
+public class DeleteRequest implements org.apache.jute.Record {
   private String path;
   private int version;
   public DeleteRequest() {

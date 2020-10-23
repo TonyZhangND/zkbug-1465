@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class GetChildren2Request implements Record {
+public class GetChildren2Request implements org.apache.jute.Record {
   private String path;
   private boolean watch;
   public GetChildren2Request() {

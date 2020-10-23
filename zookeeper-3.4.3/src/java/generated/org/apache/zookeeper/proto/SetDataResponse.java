@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class SetDataResponse implements Record {
+public class SetDataResponse implements org.apache.jute.Record {
   private org.apache.zookeeper.data.Stat stat;
   public SetDataResponse() {
   }

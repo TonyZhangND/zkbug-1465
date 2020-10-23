@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class RequestHeader implements Record {
+public class RequestHeader implements org.apache.jute.Record {
   private int xid;
   private int type;
   public RequestHeader() {

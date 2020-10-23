@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class ReplyHeader implements Record {
+public class ReplyHeader implements org.apache.jute.Record {
   private int xid;
   private long zxid;
   private int err;

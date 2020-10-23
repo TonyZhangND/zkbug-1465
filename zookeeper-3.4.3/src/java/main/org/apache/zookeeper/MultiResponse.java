@@ -37,7 +37,7 @@ import java.util.List;
  * with a negative type.  Each individual response is in the same format as
  * with the corresponding operation in the original request list.
  */
-public class MultiResponse implements Record, Iterable<OpResult> {
+public class MultiResponse implements org.apache.jute.Record, Iterable<OpResult> {
     private List<OpResult> results = new ArrayList<OpResult>();
 
     public void add(OpResult x) {

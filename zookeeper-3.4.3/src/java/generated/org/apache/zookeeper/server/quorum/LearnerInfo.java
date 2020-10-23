@@ -20,7 +20,7 @@
 package org.apache.zookeeper.server.quorum;
 
 import org.apache.jute.*;
-public class LearnerInfo implements Record {
+public class LearnerInfo implements org.apache.jute.Record {
   private long serverid;
   private int protocolVersion;
   public LearnerInfo() {

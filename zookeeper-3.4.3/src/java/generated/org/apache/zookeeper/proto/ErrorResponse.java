@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class ErrorResponse implements Record {
+public class ErrorResponse implements org.apache.jute.Record {
   private int err;
   public ErrorResponse() {
   }

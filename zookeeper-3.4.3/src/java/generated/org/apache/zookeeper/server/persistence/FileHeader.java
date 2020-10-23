@@ -20,7 +20,7 @@
 package org.apache.zookeeper.server.persistence;
 
 import org.apache.jute.*;
-public class FileHeader implements Record {
+public class FileHeader implements org.apache.jute.Record {
   private int magic;
   private int version;
   private long dbid;

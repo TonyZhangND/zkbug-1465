@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class ConnectRequest implements Record {
+public class ConnectRequest implements org.apache.jute.Record {
   private int protocolVersion;
   private long lastZxidSeen;
   private int timeOut;

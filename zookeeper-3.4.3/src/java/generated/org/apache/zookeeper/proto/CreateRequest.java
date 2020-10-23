@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class CreateRequest implements Record {
+public class CreateRequest implements org.apache.jute.Record {
   private String path;
   private byte[] data;
   private java.util.List<org.apache.zookeeper.data.ACL> acl;

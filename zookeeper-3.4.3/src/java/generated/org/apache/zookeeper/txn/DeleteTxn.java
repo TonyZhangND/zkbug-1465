@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class DeleteTxn implements Record {
+public class DeleteTxn implements org.apache.jute.Record {
   private String path;
   public DeleteTxn() {
   }

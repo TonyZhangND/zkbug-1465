@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class ExistsRequest implements Record {
+public class ExistsRequest implements org.apache.jute.Record {
   private String path;
   private boolean watch;
   public ExistsRequest() {

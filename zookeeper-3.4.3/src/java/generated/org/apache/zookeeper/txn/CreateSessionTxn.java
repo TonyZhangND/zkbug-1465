@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class CreateSessionTxn implements Record {
+public class CreateSessionTxn implements org.apache.jute.Record {
   private int timeOut;
   public CreateSessionTxn() {
   }

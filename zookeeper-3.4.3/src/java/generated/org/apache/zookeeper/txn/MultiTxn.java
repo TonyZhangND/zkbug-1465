@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class MultiTxn implements Record {
+public class MultiTxn implements org.apache.jute.Record {
   private java.util.List<org.apache.zookeeper.txn.Txn> txns;
   public MultiTxn() {
   }

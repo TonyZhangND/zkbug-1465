@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class SetMaxChildrenTxn implements Record {
+public class SetMaxChildrenTxn implements org.apache.jute.Record {
   private String path;
   private int max;
   public SetMaxChildrenTxn() {

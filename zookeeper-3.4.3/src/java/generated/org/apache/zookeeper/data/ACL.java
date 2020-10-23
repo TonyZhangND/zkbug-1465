@@ -20,7 +20,7 @@
 package org.apache.zookeeper.data;
 
 import org.apache.jute.*;
-public class ACL implements Record {
+public class ACL implements org.apache.jute.Record {
   private int perms;
   private org.apache.zookeeper.data.Id id;
   public ACL() {

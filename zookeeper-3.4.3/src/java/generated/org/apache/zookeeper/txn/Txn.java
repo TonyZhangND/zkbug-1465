@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class Txn implements Record {
+public class Txn implements org.apache.jute.Record {
   private int type;
   private byte[] data;
   public Txn() {

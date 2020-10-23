@@ -20,7 +20,7 @@
 package org.apache.zookeeper.proto;
 
 import org.apache.jute.*;
-public class SetWatches implements Record {
+public class SetWatches implements org.apache.jute.Record {
   private long relativeZxid;
   private java.util.List<String> dataWatches;
   private java.util.List<String> existWatches;

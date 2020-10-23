@@ -20,7 +20,7 @@
 package org.apache.zookeeper.txn;
 
 import org.apache.jute.*;
-public class ErrorTxn implements Record {
+public class ErrorTxn implements org.apache.jute.Record {
   private int err;
   public ErrorTxn() {
   }
