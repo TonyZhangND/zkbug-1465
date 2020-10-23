@@ -8,4 +8,5 @@ zkdata/*.pid
 zookeeper-3.4.3/.revision/
 zookeeper-3.4.3/build/
 zookeeper-3.4.3/src/java/lib/ivy-2.2.0.jar
+zookeeper-3.4.3/src/java/generated/org/apache/zookeeper/version/Info.java
 
